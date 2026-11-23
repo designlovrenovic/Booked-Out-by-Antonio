@@ -2850,3 +2850,122 @@ sc-for,sc-if{display:contents}
   .hz-l .hf-ok{margin-top:16px}
   .hz-l .hf-tl{margin-top:20px}
 }
+
+/* ═════════════ MOBILE · polish pass ═════════════ */
+@media (max-width:640px){
+  /* rhythm */
+  .sec{padding-top:72px}
+  .sec-head{row-gap:12px}
+  .h2{font-size:clamp(38px,11vw,46px);line-height:.96}
+  .sec-note{font-size:15.5px;line-height:1.5}
+  /* swipe rows: shared */
+  .hw,.vs-lose,.rw,.ox-g{scrollbar-width:none}
+  .hw::-webkit-scrollbar,.rw::-webkit-scrollbar,.ox-g::-webkit-scrollbar{display:none}
+
+  /* ── hero */
+  .hz-r{margin-top:6px}
+  .hz-ph{aspect-ratio:4/4.4}
+  .nt:nth-child(n+3){display:none}
+
+  /* ── case files: chips in one swipe line */
+  .cz-pick{display:block;margin-top:22px}
+  .cz-pick .ip{display:flex;flex-wrap:nowrap;gap:6px;overflow-x:auto;margin-inline:calc(-1 * var(--pad));padding:2px var(--pad) 4px;scrollbar-width:none}
+  .cz-pick .ip::-webkit-scrollbar{display:none}
+  .cz-pick .ip button{flex:none;min-height:42px;padding:0 18px;font-size:15px}
+  .cz{margin-top:14px;border-radius:26px}
+  .cz-l{padding:22px 20px 24px}
+  .cz-n{font-size:40px;margin-top:12px}
+  .cz-k{font-size:15px}
+  .cz-st{margin-top:18px;padding-top:16px;gap:14px}
+  .cz-st dd{font-size:16.5px}
+  .cz-num{margin-top:22px;padding-top:0}
+  .cz-num b{font-size:76px}
+  .cz-num s{font-size:26px}
+  .cz-num em{bottom:30px;font-size:20px}
+  .cz-note{margin-top:10px}
+  .cz-r{padding:26px 14px 20px;gap:10px}
+  .cz-open{margin-top:12px;padding:20px;gap:8px;border-radius:24px}
+  .cz-y{font-size:46px}
+
+  /* ── the work */
+  .wk3{margin-top:24px;padding:12px 12px 22px;border-radius:26px}
+  .wk3-ph{max-width:250px}
+  .wk3-ns ol{gap:16px}
+  .wk3-ns b{font-size:17px}
+  .wk3-ns li p{font-size:14.5px}
+  .wk3-nt{padding:0 8px}
+
+  /* ── how it works: swipe cards */
+  .hw{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:24px calc(-1 * var(--pad)) 0;padding:6px var(--pad) 26px}
+  .hw-s{flex:0 0 82%;scroll-snap-align:center;padding:12px 12px 22px}
+  .hw-v{min-height:176px;padding:14px}
+  .hw-s>b{font-size:28px}
+  .hw-s>p{font-size:15px}
+  .hw-gr svg{height:110px}
+  .hw-sc li{grid-template-columns:70px 1fr}
+
+  /* ── options: winner first, the other two side by side & compact */
+  .vs{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:24px}
+  .vs-w{grid-column:1/-1;order:-1;padding:22px 20px}
+  .vs-w li{padding:11px 0}
+  .vs-w li b{font-size:17px}
+  .vs-c:not(.vs-w){padding:16px 14px}
+  .vs-c:not(.vs-w) .vs-n{margin-bottom:8px;font-size:17px}
+  .vs-c:not(.vs-w) li{flex-direction:column;align-items:flex-start;justify-content:flex-start;gap:3px;padding:9px 0}
+  .vs-c:not(.vs-w) li .mono{font-size:9.5px}
+  .vs-c:not(.vs-w) li b{font-size:13.5px;text-align:left;line-height:1.3}
+  .vs-c:not(.vs-w) li b svg{display:none}
+
+  /* ── offer: lists swipe, price ticket full width */
+  .pk{padding:22px 14px 18px;border-radius:26px}
+  .ox-h{font-size:34px;padding-right:76px}
+  .pk-tlw{margin-top:20px;padding:14px;border-radius:20px}
+  .pk-tl{display:flex;justify-content:space-between;grid-template-columns:none;row-gap:0}
+  .pk-tl li{flex:1;padding-right:6px;gap:2px}
+  .pk-tl::before,.pk-tl::after{display:block;left:6px;right:6px;top:6px}
+  .pk-tl::after{width:calc(66.6% - 6px)}
+  .pk-tl i{width:14px;height:14px;margin-bottom:6px}
+  .pk-tl .mono{font-size:9.5px}
+  .pk-tl b{font-size:12.5px;line-height:1.2}
+  .ox-g{display:flex;flex-direction:column;gap:10px;margin:16px 0 0}
+  .ox-col{padding:18px 18px 16px}
+  .ox-k{margin-bottom:12px}
+  .ox-k b{font-size:22px}
+  .ox-col ul{gap:10px;padding-top:12px}
+  .ox-col li{font-size:15px}
+  .pk-days,.pk-sp{display:none}
+  .ox-buy{padding:22px 20px}
+  .pk .of-g{margin-top:18px}
+  .pk .of-g li{padding-top:12px}
+
+  /* ── referral */
+  .rf{padding:26px 20px 18px}
+  .rf-tk{width:76%}
+
+  /* ── reviews: swipe */
+  .rw{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:24px calc(-1 * var(--pad)) 0;padding:4px var(--pad) 20px}
+  .rw-c{flex:0 0 86%;scroll-snap-align:center}
+
+  /* ── about */
+  .ab-pic{aspect-ratio:1/1;max-height:none}
+  .ab-ph img{object-position:50% 18%}
+
+  /* ── faq: drop numbers, give text room */
+  .faq summary{grid-template-columns:minmax(0,1fr) 40px;column-gap:14px;padding:18px 0}
+  .faq summary>.mono{display:none}
+  .faq-q{font-size:20px;transform:none !important}
+  .faq-a{padding:0 0 20px 0;font-size:15.5px}
+  .faq-i{width:40px;height:40px}
+
+  /* ── contact */
+  .ct-top{position:relative;display:block}
+  .ct-top .cta-h{padding-right:0}
+  .ct-cal{display:grid;grid-template-columns:auto 1fr;grid-template-rows:auto auto;align-items:center;column-gap:14px;width:auto;margin:18px 0 0;padding:10px 16px 10px 10px;border-radius:18px;transform:none;text-align:left}
+  .ct-ring{display:none}
+  .ct-m{grid-column:1;grid-row:1;width:58px;padding:6px 0 5px;border-radius:12px 12px 0 0;font-size:10px;letter-spacing:.14em}
+  .ct-d{grid-column:1;grid-row:2;width:58px;margin:0;padding:2px 0 4px;border-radius:0 0 12px 12px;box-shadow:inset 0 0 0 1px rgba(120,80,40,.16);font-size:30px;text-align:center}
+  .ct-w{grid-column:2;grid-row:1;align-self:end;margin:0;font-size:11px}
+  .ct-h{grid-column:2;grid-row:2;align-self:start;position:static;transform:none;margin:4px 0 0;font-size:19px;color:var(--ac)}
+  .cf-or{flex-direction:row;justify-content:center;gap:4px 18px}
+  .cf-door{padding:16px 18px}
+}
